@@ -25,3 +25,13 @@ function matchPass() {
 }
 pass1.addEventListener('change', matchPass);
 pass2.addEventListener('keyup', matchPass);
+
+
+let photo = document.getElementById("photo");
+let photo_label = document.getElementById("choose-photo");
+photo.addEventListener('change', function(e) {
+    let img = document.getElementById("uploaded-img");
+    img.style.display = "block";
+    if (photo_label != null) photo_label.style.display = "none";
+    img.src = URL.createObjectURL(e.target.files[0]);
+})

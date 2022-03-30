@@ -1,10 +1,3 @@
-<?php 
-    session_start();
-
-    $_SESSION['errorRegis'] = 0;
-    $_SESSION['errorLogin'] = 0;
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

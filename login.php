@@ -1,13 +1,3 @@
-<?php 
-    session_start();
-
-    if ($_SESSION['errorLogin'] == 1) {
-        echo "<script>alert('Username tidak ditemukan!')</script>";
-    } else if ($_SESSION['errorLogin'] == 2) {
-        echo "<script>alert('Mohon periksa kembali username atau password!')</script>";
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
